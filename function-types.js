@@ -1,6 +1,17 @@
+// the following functions are exactly same, first 2 are just short hands of third.
+function george(){}; 
+// expands to 
+var george = function george(){};
+// expands to 
+var george = undefined;
+geroge = function george(){};
+
+
+
+
+
 // run-time and parse-time functions, when functions are assigned to variables, they are run-time. In another word, order difference.
 // when functions are not assigned to variaables, they are parse-time. In another word, no order difference.
-
 var functionOne = function(){
   console.log('run-time error will be caused');
   // this functions will not run because when signing a funciton as a variable, it goes as run-time.
